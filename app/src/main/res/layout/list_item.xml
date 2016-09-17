@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:gravity="center"
+              style="@style/listItemStyle"
+              android:background="@color/tan_background"
+    >
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:src="@mipmap/ic_launcher"
+            />
+
+    <LinearLayout
+        android:id="@+id/words_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:background="@color/category_numbers"
+        android:paddingLeft="16dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/miwok"
+            android:text="lutti"
+            android:gravity="bottom"
+            style="@style/listItemText"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/english"
+            android:text="one"
+            android:gravity="top"
+            style="@style/listItemText"/>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
