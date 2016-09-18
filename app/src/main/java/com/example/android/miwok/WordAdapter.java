@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -41,7 +42,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 //        Estoy usando el metodo de la clase padre para conseguir el objeto en cierta posicion
         Word currentWord = getItem(position);
 
-        LinearLayout wordsContainer = (LinearLayout)listItemView.findViewById(R.id.words_container);
+        RelativeLayout wordsContainer = (RelativeLayout) listItemView.findViewById(R.id.words_container);
         wordsContainer.setBackgroundResource(mColorResource);
 
         TextView englishTextView = (TextView) listItemView.findViewById(R.id.english);
@@ -58,6 +59,8 @@ public class WordAdapter extends ArrayAdapter<Word> {
             image.setImageResource(currentWord.getImageResource());
 
         }
+
+        ImageView playIcon = (ImageView)listItemView.findViewById(R.id.play_icon);
 
         return listItemView;
     }
