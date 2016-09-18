@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         phrasesTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(v.getContext(), PhrasesActivity.class);
+//                startActivity(v.getContext(), PhrasesActivity.class);
             }
         });
     }
